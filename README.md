@@ -4,6 +4,10 @@ A Simple DDoS Toolkit
 
 D4RK_INJ3CT0R is a simple DDoS (Distributed Denial of Service) toolkit written in Python. It allows users to launch various types of attacks against target systems or services. This toolkit is intended for educational purposes only and should not be used for illegal activities.
 
+Username : Admin
+
+Password : Admin 
+
 # Features
 D4RK_INJ3CT0R supports the following attack modules:
 
