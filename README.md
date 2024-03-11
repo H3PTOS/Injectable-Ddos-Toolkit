@@ -35,14 +35,31 @@ From here Link : https://f-droid.org/en/packages/com.termux/
 
 # Installation
 
+#Commands :
 
+$ apt update  
 
+$ apt upgrade 
 
+$ pkg update 
 
+$ pkg upgrade 
 
+$ pkg install git 
 
+$ pkg install python
 
+$ git clone https://github.com/Inj3ct4ble/Injectable-Ddos-Toolkit/
 
+$ cd Injectable-Ddos-Toolkit
+
+$ pip --version
+
+$ pip install requests
+
+$ pip install termcolor
+
+$ python3 main.py
 
 # Query
 
